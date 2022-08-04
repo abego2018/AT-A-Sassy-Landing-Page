@@ -77,16 +77,16 @@ a {
 .hero nav img {
   width: 45%;
 }
-.hero nav-content {
+.hero-content {
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
 }
-.hero nav-content img {
+.hero-content img {
   width: 50%;
 }
-.hero nav-content h1 {
+.hero-content h1 {
   font-size: 2em;
   line-height: 1;
 }

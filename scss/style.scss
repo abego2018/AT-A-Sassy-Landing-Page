@@ -25,7 +25,7 @@ a {
 .hero {
 
   @include set-bg($primary-color);
-  
+
   nav{
     display:flex;
     align-items: center;
@@ -46,29 +46,23 @@ a {
         color:($secondary-color)
       }
     }
-
-  
-    // & - parent selctor used in nested selectors to refer to the outer selector.
-    &-content { 
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      img{
-        width: 50%;
-      }
-      h1{
-        font-size: 2em;
-        line-height:1;
-      }
-      
+  }
+  // & - parent selctor used in nested selectors to refer to the outer selector.
+  &-content { 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+      width: 50%;
+    }
+    h1{
+      font-size: 2em;
+      line-height:1;
     }
     
-
-  
   }
-
 
 
 
