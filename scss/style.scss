@@ -23,10 +23,50 @@ a {
 }
 
 .hero {
+
+  @include set-bg($primary-color);
+  
   nav{
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    display:flex;
+    
+    ul{
+      display: flex;
+      list-style-type: none;
+    }
+
+    li{
+      padding: 20px
+    }
+
+    a{
+      color: text-color-picker($primaryy-color);
+      &:hover {
+        color:($secondary-color)
+      }
+    }
+
+  
+    // & - parent selctor used in nested selectors to refer to the outer selector.
+    &-content { 
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img{
+        width: 50%;
+      }
+      h1{
+        font-size: 2em;
+        line-height:1;
+      }
+      
+    }
+    
+
+  
   }
 
 
